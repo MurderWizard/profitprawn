@@ -1,0 +1,30 @@
+Data Collection:
+Collect data in '5m', '15m', '1h', '4h', and '1d' timeframes.
+
+Data Processing:
+Process the collected data in these intervals, calculating the necessary technical indicators including MACD, Bollinger Bands, Donchian and Keltner Channels, RSI, VWAP, and VWMA.
+
+Trend Identification:
+Calculate VWMA on two different time frames:
+
+Long-term trend: Calculate VWMA with a period of 1440 bars (equivalent to 1 week) on the '1h' timeframe.
+Short-term trend: Calculate VWMA with a period of 240 bars (equivalent to 4 hours) on the '15m' timeframe.
+If the price is above both the VWMA for the long-term and short-term trend, the overall trend is considered bullish. If it's below both, the trend is considered bearish.
+
+Support and Resistance Identification:
+Identify support and resistance levels using '4h' and '1d' intervals. Utilize price action analysis, Fibonacci levels, and the upper and lower bands of the Bollinger, Donchian, and Keltner Channels to identify these levels.
+
+Signal Generation:
+Generate trading signals based on the identified trend and the conditions specified in the strategy. Assign weights to the signals based on the confluence of the Fibonacci levels. Give higher weights to the signals that occur near confluence areas.
+
+Risk Management:
+Calculate the size of the position based on your risk management rules. Limit each trade to use only 3 percent of your trading capital.
+
+Trade Execution:
+If a trading signal is generated and the risk management conditions are met, execute the trade. Set a trailing stop loss and trailing take profit to lock in the profits and limit losses as the price moves.
+
+Trade Management:
+Monitor the position based on real-time market data. Adjust the stop loss and take profit levels based on the trailing stop loss and take profit rules. If the market price reaches the trailing stop loss or trailing take profit level, close the position.
+
+Repeat:
+After exiting a trade, repeat the process by monitoring the market, identifying the overall trend, and looking for new trading opportunities.1
